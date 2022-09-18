@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <form>
+        <h2>Registration</h2>
+        <div>
+            <label>Your Nickname: </label>
+            <input class="name" placeholder="Your nickname" required/>
+        </div>
+        <div>
+            <label>Your Email: </label>
+            <input type="email" class="email" placeholder="Your Email" required/>
+        </div>
+        <div>
+            <label>Your Password: </label>
+            <input type="password" class="password" required/>
+        </div>
+        <div>
+            <label>Repeat your password: </label>
+            <input type="password" class="password_repeat" required/>
+        </div>
+        <div>
+            <label>Your Pol: </label>
+            <label>M</label>
+            <input type="radio" name="pol" class="male"/>
+            <label>F</label>
+            <input type="radio" name="pol" class="female"/>
+        </div>
+        <div>
+            <label>Your Country: </label>
+            <select id="contry">
+                <option disabled selected>Choose a country</option>
+                <option value="Russia">Russia</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Kazachstan">Kazachstan</option>
+            </select>
+        </div>
+        <div class="buton">
+            <button>Registrate</button>
+        </div>
+    </form>
+</body>
+</html>
