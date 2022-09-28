@@ -2,7 +2,7 @@ import React from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher/ui/ThemeSwitcher';
-import cls from './navbar.module.scss';
+import cls from './Navbar.module.scss';
 
 interface NavbarProps {
     className?: string;
