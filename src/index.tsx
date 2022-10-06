@@ -10,9 +10,7 @@ import { ErrorBoundary } from './app/providers/ErrorBoundary';
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
-// const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
-
     <BrowserRouter>
         <ErrorBoundary>
             <ThemeProvider>
