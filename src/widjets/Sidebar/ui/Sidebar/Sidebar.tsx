@@ -11,10 +11,11 @@ interface SidebarProps {
 
 export const Sidebar = ({ className }: SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
-    const { t } = useTransition(); const
-        onToggle = async () => {
-            setCollapsed((prev) => !prev);
-        };
+    const { t } = useTransition();
+    console.log('tutu');
+    const onToggle = async () => {
+        setCollapsed((prev) => !prev);
+    };
     return (
         <div
             data-testid="sidebar"
