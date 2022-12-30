@@ -53,7 +53,7 @@ module.exports = {
         ],
         'max-len': ['error', {
             ignoreComments: true,
-            code: 100,
+            code: 180,
         }],
     },
     globals: {
@@ -63,6 +63,8 @@ module.exports = {
         files: ['**/src/**/*.test.{ts,tsx}'],
         rules: {
             'i18next/no-literal-string': 'off',
+            'storybook/hierarchy-separator': 'error',
+            'storybook/default-exports': 'off',
         },
     }],
 };

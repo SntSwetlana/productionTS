@@ -11,7 +11,7 @@ root.render(
     <BrowserRouter>
         <ErrorBoundary>
             <ThemeProvider>
-                <App tab="home" />
+                <App />
             </ThemeProvider>
         </ErrorBoundary>
     </BrowserRouter>,
