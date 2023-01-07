@@ -7,9 +7,15 @@
     }
   },
   "About": "About",
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
+    " Ad aspernatur atque cumque cupiditate dignissimos doloremque doloribus ea error iste minus necessitatibus nihil nisi officia officiis omnis perspiciatis placeat quae qui quibusdam repellendus similique sint sunt, suscipit voluptate voluptatum? Enim, fuga": {
+      "": ""
+    }
+  },
   "Main": "Главная",
   "Page not found": "Страница не найдена",
   "throw error": "throw error",
+  "Войти": "Войти",
   "Главная": "Главная",
   "Главная страница": "Главная страница",
   "О сайте": "О сайте",
