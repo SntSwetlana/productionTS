@@ -7,7 +7,6 @@ import { Sidebar } from 'widjets/Sidebar';
 
 function App() {
     const { theme } = useTheme();
-    console.log('here!!!!');
     return (
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback="">
