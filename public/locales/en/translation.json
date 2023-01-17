@@ -10,5 +10,6 @@
   "О сайте": "About",
   "Войти": "Enter",
   "increment": "increment",
-  "decrement": "decrement"
+  "decrement": "decrement",
+  "Вы ввели неверный логин и пароль": "Вы ввели неверный логин и пароль"
 }
