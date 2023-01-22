@@ -25,5 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "first": "Swetlana",
+    "LastName": "Aderikhina",
+    "age": "40",
+    "currency": "USD",
+    "country": "",
+    "city": "Los-Angeles",
+    "username": "sntSwetlana",
+    "avatar": "https://studio.youtube.com/channel/UCi0IBGNwoqUBTMLVU4D9m1g/editing/images"
+ }
 }
