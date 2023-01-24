@@ -1,8 +1,9 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+import axios, { AxiosInstance } from 'axios';
 import { User, userActions } from 'app/entities/User';
 import { USER_LOCALSTORAGE_KEY } from 'shared/const/localstorage';
 import { ThunkConfig } from 'app/providers/StoreProvider';
+import { ThunkExtraArg } from 'app/providers/StoreProvider/config/StateSchema';
 
 interface LoginByUsernameProps {
     username: string;
@@ -15,22 +16,26 @@ enum loginErrors {
 
 }
 
-export const loginByUsername = createAsyncThunk<User, LoginByUsernameProps, ThunkConfig<string>>(
-    'login/loginByUsername',
-    async (authData, thunkAPI) => {
-        const { extra, dispatch, rejectWithValue } = thunkAPI;
-        try {
-            const response = await extra.api.post<User>('/login', authData);
+export const loginByUsername = createAsyncThunk<
+    User,
+    LoginByUsernameProps,
+    ThunkConfig<string>
+    >(
+        'login/loginByUsername',
+        async (authData, thunkAPI) => {
+            const { extra, dispatch, rejectWithValue } = thunkAPI;
+            try {
+                const response = await extra.api.post<User>('/login', authData);
 
-            if (!response.data) {
-                throw new Error();
+                if (!response.data) {
+                    throw new Error();
+                }
+                localStorage.setItem(USER_LOCALSTORAGE_KEY, JSON.stringify(response.data));
+                dispatch(userActions.setAuthData(response.data));
+                return response.data;
+            } catch (e) {
+                console.log(e);
+                return rejectWithValue('error');
             }
-            localStorage.setItem(USER_LOCALSTORAGE_KEY, JSON.stringify(response.data));
-            dispatch(userActions.setAuthData(response.data));
-            return response.data;
-        } catch (e) {
-            console.log(e);
-            return rejectWithValue('error');
-        }
-    },
-);
+        },
+    );
