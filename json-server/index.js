@@ -18,6 +18,7 @@ server.use(async (req, res, next) => {
 
 server.post('/login', (req, res) => {
     const { username, password } = req.body;
+    console.log(`username ${username} password ${password}`);
     const db = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'db.json'), 'UTF-8'));
     const { users } = db;
 

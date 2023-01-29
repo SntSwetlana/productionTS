@@ -12,11 +12,15 @@ module.exports = {
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
+        ecmaFeatures: {
+            jsx: true,
+        },
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
     plugins: [
         'react',
+        '@typescript-eslint',
         'i18next',
         'react-hooks',
     ],
@@ -62,6 +66,10 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'error',
         'no-param-reassign': 'off',
         'no-undef': 'off',
+        '@typescript-eslint/no-unused-vars': [
+            'error',
+            { argsIgnorePattern: '^_' },
+        ],
     },
     globals: {
         __IS_DEV__: true,

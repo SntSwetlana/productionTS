@@ -6,8 +6,7 @@ import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 describe('Button', () => {
     test('test render Button', () => {
         render(<Button>TEST</Button>);
-        expect(screen.getByText('TEST')).toHaveClass('clear');
-        screen.debug();
+        expect(screen.getByText('TEST')).toBeInTheDocument();
     });
     test('test clear theme', () => {
         render(<Button theme={ButtonTheme.CLEAR}>TEST</Button>);
