@@ -8,7 +8,7 @@ import { Currency } from 'app/entities/Currency/model/types/currency';
 import { CurrencySelect } from 'app/entities/Currency';
 import { Country } from 'app/entities/Country/model/types/country';
 import { CountrySelect } from 'app/entities/Country';
-import { Profile } from '../../model/types/Profile';
+import { Profile } from 'app/entities/Profile';
 import cls from './ProfileCard.module.scss';
 
 interface ProfileCardProps {
