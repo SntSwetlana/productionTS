@@ -11,7 +11,7 @@ const MainPage = () => {
         setValue(val);
     };
     return (
-        <div>
+        <div style={{ color: 'olive' }}>
             {t('Главная страница')}
             {/* <Counter /> */}
             {/* <Input */}

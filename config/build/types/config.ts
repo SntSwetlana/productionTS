@@ -11,3 +11,11 @@ export interface BuildEnv {
     port: number;
     apiUrl: string;
 }
+export interface BuildOptions {
+    mode: BuildMode;
+    paths: BuildPaths;
+    isDev: boolean;
+    port: number;
+    apiUrl: string;
+    project: 'storybook' | 'frontend' | 'jest';
+}
