@@ -4,9 +4,13 @@ module.exports = {
     ],
     addons: [
         '@storybook/addon-links',
-        '@storybook/addon-essentials',
+        {
+            name: '@storybook/addon-essentials',
+            options: {
+                backgrounds: false,
+            },
+        },
         '@storybook/addon-interactions',
-        ['storybook-addon-react-router-v6'],
     ],
     framework: '@storybook/react',
     core: {
