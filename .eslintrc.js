@@ -8,7 +8,7 @@ module.exports = {
         'plugin:react/recommended',
         'airbnb',
         'plugin:i18next/recommended',
-        'plugin:storybook/recommended',
+        'eslint:recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -33,14 +33,14 @@ module.exports = {
             {
                 extensions: [
                     '.js',
+                    '.jsx',
                     '.tsx',
-                    '.ts',
                 ],
             },
         ],
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
-        'no-unused-vars': 'warn',
+        'no-unused-vars': 'off',
         'react/require-default-props': 'off',
         'react/react-in-jsx-scope': 'off',
         'react/jsx-props-no-spreading': 'warn',
@@ -66,10 +66,10 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'error',
         'no-param-reassign': 'off',
         'no-undef': 'off',
-        '@typescript-eslint/no-unused-vars': [
-            'error',
-            { argsIgnorePattern: '^_' },
-        ],
+        // '@typescript-eslint/no-unused-vars': [
+        //      'error',
+        //      { argsIgnorePattern: '^_' },
+        //  ],
     },
     globals: {
         __IS_DEV__: true,
@@ -80,8 +80,8 @@ module.exports = {
         files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
         rules: {
             'i18next/no-literal-string': 'off',
-            'storybook/hierarchy-separator': 'error',
-            'storybook/default-exports': 'off',
+            // 'storybook/hierarchy-separator': 'error',
+            // 'storybook/default-exports': 'off',
             'max-len': 'off',
         },
     }],

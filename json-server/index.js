@@ -41,7 +41,6 @@ server.use((req, res, next) => {
     next();
 });
 
-server.use(jsonServer.defaults());
 server.use(router);
 
 server.listen(8000, () => {

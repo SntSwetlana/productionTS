@@ -26,6 +26,7 @@ export const DynamicModuleLoader: FC<DynamicModuleLoaderProps> = (props) => {
         Object.entries(reducers).forEach(([name, reducer]) => {
             store.reducerManager.add(name as StateSchemaKey, reducer);
             dispatch({ type: `@INIT ${name} reducer` });
+            console.log(`@INIT ${name} reducer`);
         });
 
         return () => {

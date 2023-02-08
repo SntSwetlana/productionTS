@@ -1,16 +1,15 @@
 @import "reset";
-@import "app/styles/variables/global.scss";
-@import "app/styles/themes/dark.scss";
-@import "app/styles/themes/normal.scss";
-@import "app/styles/themes/orange.scss";
+@import "./variables/global";
+@import "./themes/dark";
+@import "./themes/normal";
+@import "./themes/orange";
 
-body{
+body {
     font: var(--font-m);
     color: var(--primary-color);
 }
 
-.app,
-{
+.app, {
     min-height: 100vh;
     background: var(--bg-color);
 }
@@ -21,5 +20,8 @@ body{
 
 .page-wrapper {
     flex-grow: 1;
-    padding: 20px;
+    padding: 20px 20px 20px 45px;
+    height: calc(100vh - var(--navbar-height));
+    overflow-y: auto;
+    width: 100%;
 }

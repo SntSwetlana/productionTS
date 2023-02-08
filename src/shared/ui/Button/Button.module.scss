@@ -1,7 +1,13 @@
 .Button {
     cursor: pointer;
     color: var(--primary-color);
-    padding: 0 0;
+    padding: 0;
+
+    &:hover {
+        opacity: 0.7;
+        fill-opacity: 80%;
+        stroke-opacity: 80%;
+    }
 }
 
 .clear,
@@ -31,12 +37,13 @@
 }
 
 .background {
-    background : var(--bg-color);
+    background: var(--bg-color);
     color: var(--primary-color);
     border: none;
 }
+
 .backgroundInverted {
-    background : var(--inverted-bg-color);
+    background: var(--inverted-bg-color);
     color: var(--inverted-primary-color);
     border: none;
 }
@@ -56,18 +63,18 @@
     height: var(--font-line-xl);
 }
 
-.size_m{
+.size_m {
     font: var(--font-m);
 }
 
-.size_l{
+.size_l {
     font: var(--font-l);
 }
 
-.size_xl{
+.size_xl {
     font: var(--font-xl);
 }
 
-.disabled{
+.disabled {
     opacity: 0.5;
 }

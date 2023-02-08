@@ -24,19 +24,20 @@
     bottom: 32px;
 }
 
-.items{
+.items {
     margin-top: 20px;
     margin-left: 30px;
     display: flex;
     flex-direction: column;
 }
+
 .item {
     margin-top: 10px;
     display: flex;
     align-items: center;
 }
 
-.link{
+.link {
     margin-left: 10px;
     opacity: 1;
 }
@@ -47,14 +48,17 @@
 
 .collapsed {
     width: var(--sidebar-width-collapsed);
+
     .switchers {
         flex-direction: column;
         align-items: center;
     }
-    .lang{
+
+    .lang {
         margin-left: 0;
     }
-    .link{
+
+    .link {
         opacity: 0;
         transition: 0.2s opacity;
         width: 0;
