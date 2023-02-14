@@ -91,8 +91,6 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
             </>
         );
     } else if (error) {
-        console.log('Error Article Details');
-        console.log(error);
         content = (
             <Text
                 align={TextAlign.CENTER}
@@ -129,8 +127,6 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
             </>
         );
     }
-
-    console.log(content);
 
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>

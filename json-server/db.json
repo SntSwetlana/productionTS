@@ -91,7 +91,7 @@
     },
     {
       "id": "2",
-      "text": "some comment 2",
+      "text": "!!! some comment 2",
       "articleId": "1",
       "userId": "1"
     },
@@ -107,13 +107,15 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "https://www.duarte.com/wp-content/uploads/English-as-a-Second-Language-ESL.png"
     },
     {
       "id": "2",
       "username": "user",
       "password": "qwerty",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "https://pbs.twimg.com/profile_images/1540409059874045952/0yiGg-Lr_400x400.jpg"
     }
   ],
   "profile": {
