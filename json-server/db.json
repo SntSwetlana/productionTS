@@ -19,7 +19,9 @@
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -100,6 +102,36 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "ghjjhgjhgjhb jbjh",
+      "id": "E5bJDoY"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "hjuygtyui",
+      "id": "Jyta3Zx"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "12312312312",
+      "id": "yYrQBZE"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "sdfsdfsdf",
+      "id": "HH3nF9U"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "LKLKLKsdmn,smn,slkejqw",
+      "id": "PtCJJo8"
     }
   ],
   "users": [
@@ -118,14 +150,28 @@
       "avatar": "https://pbs.twimg.com/profile_images/1540409059874045952/0yiGg-Lr_400x400.jpg"
     }
   ],
-  "profile": {
-    "first": "Swetlana",
-    "LastName": "Aderikhina",
-    "age": 40,
-    "currency": "USD",
-    "country": "the USA",
-    "city": "Los-Angeles",
-    "username": "sntSwetlana",
-    "avatar": "https://www.shutterstock.com/image-photo/young-beautiful-teacher-woman-wearing-260nw-1639692436.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Swetlana",
+      "LastName": "Aderikhina",
+      "age": 40,
+      "currency": "USD",
+      "country": "the USA",
+      "city": "Los-Angeles",
+      "username": "sntSwetlana",
+      "avatar": "https://www.shutterstock.com/image-photo/young-beautiful-teacher-woman-wearing-260nw-1639692436.jpg"
+    },
+    {
+      "id": "2",
+      "first": "Anton ",
+      "LastName": "Service",
+      "age": 42,
+      "currency": "USD",
+      "country": "the USA",
+      "city": "NY",
+      "username": "AntonA",
+      "avatar": "https://www.meme-arsenal.com/memes/2905dff7cd0c47d6de0f6b4a9de15702.jpg"
+    }
+  ]
 }
