@@ -11,6 +11,10 @@ const data = {
     views: 0,
     createdAt: '01.01.2023',
     type: [ArticleType.IT],
+    user: {
+        id: '1',
+        username: 'Swetlana',
+    },
     blocks: [],
 };
 
