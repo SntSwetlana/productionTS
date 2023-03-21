@@ -22,17 +22,10 @@ export const ArticleList = (props: ArticleListProps) => {
     const {
         className,
         articles,
-        view = ArticleView.BIG,
+        view = ArticleView.SMALL,
         isLoading,
     } = props;
     const { t } = useTranslation();
-    if (isLoading) {
-        return (
-            <div className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
-                {getSkeletons(view)}
-            </div>
-        );
-    }
 
     const renderArticle = (article: Article) => (
         <ArticleListItem
@@ -48,6 +41,7 @@ export const ArticleList = (props: ArticleListProps) => {
             {articles.length > 0
                 ? articles.map(renderArticle)
                 : null}
+            {isLoading && getSkeletons(view) }
         </div>
     );
 };
